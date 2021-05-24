@@ -40,7 +40,6 @@ const Inspiration = () => {
           <span className="animate">Can </span>
           <span className="animate">Imagine</span>{" "}
           <span className="animate">it, </span>
-          <br />
           <span className="animate">I </span>
           <span className="animate">Can</span>{" "}
           <span className="animate">Build </span>
