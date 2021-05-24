@@ -1,0 +1,155 @@
+$light: rgb(211, 211, 211);
+$dark: #343534;
+.navFirst {
+  background-color: transparent;
+  font-weight: 500;
+
+  div.navbar-nav a.nav-link {
+    color: inherit;
+    margin-right: 20px;
+    font: {
+      size: large;
+      weight: 500;
+    }
+  }
+
+  div.logo-button {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    width: 100px;
+
+    img {
+      width: 35px;
+      height: auto;
+      border-radius: 50%;
+    }
+    .navbar-light .navbar-toggler {
+      background: rgb(211, 211, 211);
+    }
+    button {
+      background: inherit;
+      color: inherit;
+      padding: 0;
+      border: none;
+      // width: 15px;
+      margin-right: 20px;
+      span {
+        width: 50%;
+      }
+      .light {
+        background: $light;
+        border-radius: 50% 0 0 50%;
+      }
+      .dark {
+        background: $dark;
+        border-radius: 0 50% 50% 0;
+      }
+    }
+  }
+}
+div.animation {
+  margin-top: 15vh;
+  h1 {
+    .animate {
+      opacity: 0;
+      font: {
+        weight: bold;
+        size: 7vw;
+      }
+    }
+  }
+}
+.about {
+  margin-top: 10vh;
+  h3 {
+    font: {
+      weight: bolder;
+      size: 150%;
+    }
+  }
+  p {
+    margin-top: 2vh;
+    font: {
+      size: large;
+      weight: 500;
+    }
+  }
+}
+div.skills {
+  margin-top: 10vh;
+  img {
+    width: 15vw;
+    height: auto;
+  }
+  h3 {
+    margin-bottom: -5vh;
+    font: {
+      weight: bolder;
+      size: 150%;
+      text-align: initial;
+    }
+  }
+  div.flex {
+    align-items: center;
+    margin: 7vh 0 0 0;
+    text-align: center;
+    h4 {
+      font: {
+        size: large;
+      }
+    }
+    margin-top: 10vh;
+  }
+}
+.container-fluid {
+  h3 {
+    margin: {
+      bottom: 5vh;
+      top: 10vh;
+    }
+    font: {
+      weight: bolder;
+      size: 150%;
+    }
+  }
+  div.card-deck {
+    div.card {
+      border-radius: 7px;
+      margin-bottom: 7vh;
+      border-color: #6c757d !important;
+      div.embed-responsive {
+        border-bottom: {
+          width: 10px;
+        }
+        border-bottom-style: solid;
+        embed {
+          border-radius: 7px 7px 0 0;
+        }
+      }
+      div.embed-responsive::-webkit-scrollbar {
+        display: none;
+      }
+      div.card-body div.card-title {
+        font: {
+          weight: bolder;
+          size: 150%;
+        }
+      }
+      h6 {
+        font-weight: 800;
+      }
+      p.card-text {
+        font: {
+          size: large;
+          weight: 500;
+        }
+      }
+    }
+  }
+  button {
+    margin-top: -3vh;
+  }
+}
