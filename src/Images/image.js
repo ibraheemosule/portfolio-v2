@@ -23,6 +23,8 @@ import firstTemplate from "./firstTemplate.png";
 import revealbot from "./revealbot.png";
 import receiptGenerator from "./receiptGenerator.png";
 import decideForMe from "./decideForMe.png";
+import starwars from "./starwars.png";
+import ecommerce from "./ecommerce.png";
 
 const images = {
   avi,
@@ -53,6 +55,8 @@ const projectImages = {
   firstTemplate,
   receiptGenerator,
   decideForMe,
+  ecommerce,
+  starwars,
 };
 
 export { images, projectImages };

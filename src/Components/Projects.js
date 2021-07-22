@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { projectImages } from "../Images/image";
 
 const Project = (props) => {
-  const { softcompage, todolist, jsonplaceholderposts } = projectImages;
+  const { jsonplaceholderposts, decideForMe, starwars } = projectImages;
   return (
     <Container fluid>
       <Row id="projects">
@@ -26,20 +26,19 @@ const Project = (props) => {
             darkMode={props.darkMode}
           />
           <ProjectTemplate
-            image={todolist}
-            link={"https://ios-todolist.netlify.app"}
-            title={"Todo List"}
-            text={`A todo list that keeps track of your daily activities, 
-            when it started and when completed`}
-            tools={"Html, css, Javascript"}
+            image={starwars}
+            link={"https://ios-starwars.netlify.app"}
+            title={"Starwars Movie"}
+            text={`A web application created using starwars api that shows the characters, planets and starships`}
+            tools={"Html, css, Javascript, vue, starwars api, vuex"}
             darkMode={props.darkMode}
           />
           <ProjectTemplate
-            image={softcompage}
-            link={"https://ios-softcompage.netlify.app"}
-            title={"Softcom Landing Page"}
-            text={`Created a replica of https://softcom.ng landing page`}
-            tools={"Html, css, Javascript"}
+            image={decideForMe}
+            link={"https://ios-decideforme.netlify.app"}
+            title={"A React Todo"}
+            text={`Created another todo using react and added the random selection option`}
+            tools={"html, css, react, scss"}
             darkMode={props.darkMode}
           />
         </CardDeck>
