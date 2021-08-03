@@ -37,7 +37,12 @@ const Navigate = (props) => {
           <span className="dark">L</span>
         </button>
         <Brand>
-          <img onClick={() => setImg(true)} src={images.avi} alt="my avi" />
+          <img
+            onClick={() => setImg(true)}
+            style={{ cursor: "pointer" }}
+            src={images.avi}
+            alt="my avi"
+          />
         </Brand>
       </div>
     </Navbar>
