@@ -14,9 +14,6 @@ import softcompage from "./softcompage.png";
 import todolist from "./todolist.png";
 import portfolio from "./portfolio.png";
 import jsonplaceholderposts from "./jsonplaceholderposts.png";
-import orlacouture from "./orlacouture.png";
-import vonth from "./vonth.png";
-import benedictgraphics from "./benedictgraphics.png";
 import cyhermes from "./cyhermes.png";
 import ddlabs from "./ddlabs.png";
 import firstTemplate from "./firstTemplate.png";
@@ -25,6 +22,7 @@ import receiptGenerator from "./receiptGenerator.png";
 import decideForMe from "./decideForMe.png";
 import starwars from "./starwars.png";
 import ecommerce from "./ecommerce.png";
+import drugstoc from "./drugstoc.png";
 
 const images = {
   avi,
@@ -46,9 +44,7 @@ const projectImages = {
   todolist,
   portfolio,
   jsonplaceholderposts,
-  orlacouture,
-  vonth,
-  benedictgraphics,
+
   revealbot,
   ddlabs,
   cyhermes,
@@ -57,6 +53,7 @@ const projectImages = {
   decideForMe,
   ecommerce,
   starwars,
+  drugstoc,
 };
 
 export { images, projectImages };

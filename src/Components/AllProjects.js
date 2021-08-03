@@ -14,12 +14,13 @@ const AllProjects = (props) => {
     todolist,
     jsonplaceholderposts,
     decideForMe,
-    vonth,
+
     firstTemplate,
     ddlabs,
     revealbot,
     cyhermes,
     receiptGenerator,
+    drugstoc,
   } = projectImages;
 
   const { darkMode } = props;
@@ -96,12 +97,11 @@ const AllProjects = (props) => {
               darkMode={darkMode}
             />
             <ProjectTemplate
-              image={vonth}
-              link={"https://vonth.com.ng"}
-              title={"Vonth News Media"}
-              text={`A blog website for news update created for a client as Astract9 Designs 
-              (images were provided by the client)`}
-              tools={"Wordpress"}
+              image={drugstoc}
+              link={"https://drugstoc.netlify.app"}
+              title={"Lists Page"}
+              text={`A List landing page where new lists can be added, filtered by price, sorted alphabetically and by price and items can be deleted from the list`}
+              tools={"Vue, css, vuex"}
               darkMode={darkMode}
             />
             <ProjectTemplate
