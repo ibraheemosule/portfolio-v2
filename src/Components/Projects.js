@@ -9,12 +9,7 @@ import { Link } from "react-router-dom";
 import { projectImages } from "../Images/image";
 
 const Project = (props) => {
-  const {
-    jsonplaceholderposts,
-    decideForMe,
-    starwars,
-    ecommerce,
-  } = projectImages;
+  const { jsonplaceholderposts, starwars, ecommerce } = projectImages;
   return (
     <Container fluid>
       <Row id="projects">
