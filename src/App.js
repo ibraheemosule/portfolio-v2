@@ -13,7 +13,9 @@ function App() {
     <div
       className="App"
       style={{
-        backgroundColor: darkMode ? "#343534" : "rgb(211, 211, 211)",
+        backgroundImage: darkMode
+          ? "linear-gradient(to top, #343534 0%, #343534 100%)"
+          : "linear-gradient(45deg, #ffffff 0%, #e6e9f0 30%, #eef1f5 100%)",
         color: darkMode ? "rgb(211, 211, 211)" : "#343534",
       }}
     >
@@ -33,13 +35,9 @@ function App() {
             )}
           />
           <Layout>
-            <Route path="/AllProjects" 
-            render={(props) => (
-              <AllProjects
-              {...props} 
-              darkMode={darkMode}
-              />
-            )}
+            <Route
+              path="/AllProjects"
+              render={(props) => <AllProjects {...props} darkMode={darkMode} />}
             />
           </Layout>
         </Switch>
