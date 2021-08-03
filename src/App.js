@@ -16,7 +16,7 @@ function App() {
         backgroundImage: darkMode
           ? "linear-gradient(to top, #343534 0%, #343534 100%)"
           : "linear-gradient(45deg, #ffffff 0%, #e6e9f0 30%, #eef1f5 100%)",
-        color: darkMode ? "rgb(211, 211, 211)" : "#343534",
+        color: darkMode ? "rgb(211, 211, 211)" : "#4e4e4e",
       }}
     >
       <BrowserRouter>
