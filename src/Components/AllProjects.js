@@ -14,8 +14,7 @@ const AllProjects = (props) => {
     todolist,
     jsonplaceholderposts,
     decideForMe,
-
-    firstTemplate,
+    covidStats,
     ddlabs,
     revealbot,
     cyhermes,
@@ -131,11 +130,11 @@ const AllProjects = (props) => {
               darkMode={darkMode}
             />
             <ProjectTemplate
-              image={firstTemplate}
-              link={"https://ios-firsttemplate.netlify.app/"}
-              title={"HNGi7 Task"}
-              text={`Tasked to create a desktop-view template`}
-              tools={"html, css, netlify"}
+              image={covidStats}
+              link={"https://ios-covidstats.netlify.app/"}
+              title={"Nigeria Covid Data"}
+              text={`A web app for keeping track of covid stats in Nigeria`}
+              tools={"html, css, vue, tailwind "}
               darkMode={darkMode}
             />
           </CardDeck>

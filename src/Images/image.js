@@ -23,6 +23,7 @@ import decideForMe from "./decideForMe.png";
 import starwars from "./starwars.png";
 import ecommerce from "./ecommerce.png";
 import drugstoc from "./drugstoc.png";
+import covidStats from "./covidStats.png"
 
 const images = {
   avi,
@@ -44,7 +45,7 @@ const projectImages = {
   todolist,
   portfolio,
   jsonplaceholderposts,
-
+  covidStats,
   revealbot,
   ddlabs,
   cyhermes,
