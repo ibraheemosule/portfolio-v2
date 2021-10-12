@@ -20,8 +20,8 @@ const WorkInterest = () => (
         <p>
           I'm interested in a working for a company that promotes employee's
           growth, provides a flexible work enviroment and values employee's
-          welfare. Also, I also fancy working on freelance WordPress projects
-          and web apps projects.
+          welfare. Also, I fancy working on freelance WordPress projects and
+          exciting web apps projects.
         </p>
       </Col>
     </Row>

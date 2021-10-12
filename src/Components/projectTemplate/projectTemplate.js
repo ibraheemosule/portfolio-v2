@@ -36,7 +36,7 @@ const ProjectTemplate = (props) => {
           />
         </Title>
         <h6>{tools}</h6>
-        <Text>{text}</Text>
+        <Text className="font-weight-light">{text}</Text>
       </Body>
       <Footer>
         <Link href={link} target="_blank">

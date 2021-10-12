@@ -5,6 +5,7 @@ import { Layout } from "./Components/Layout";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
 import AllProjects from "./Components/AllProjects";
+import ScrollToTop from "./Components/projectTemplate/ScrollToTop";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,27 +21,31 @@ function App() {
       }}
     >
       <BrowserRouter>
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <Home
-                {...props}
-                setDarkMode={setDarkMode}
-                darkMode={darkMode}
-                img={img}
-                setImg={setImg}
-              />
-            )}
-          />
-          <Layout>
+        <ScrollToTop>
+          <Switch>
             <Route
-              path="/AllProjects"
-              render={(props) => <AllProjects {...props} darkMode={darkMode} />}
+              exact
+              path="/"
+              render={(props) => (
+                <Home
+                  {...props}
+                  setDarkMode={setDarkMode}
+                  darkMode={darkMode}
+                  img={img}
+                  setImg={setImg}
+                />
+              )}
             />
-          </Layout>
-        </Switch>
+            <Layout>
+              <Route
+                path="/AllProjects"
+                render={(props) => (
+                  <AllProjects {...props} darkMode={darkMode} />
+                )}
+              />
+            </Layout>
+          </Switch>
+        </ScrollToTop>
       </BrowserRouter>
     </div>
   );

@@ -1,13 +1,4 @@
 import avi from "./avi.jpg";
-import bootstrap from "./bootstrap.png";
-import css from "./css.png";
-import html from "./html.png";
-import javascript from "./javascript.png";
-import netlify from "./netlify.png";
-import nuxt from "./nuxt.png";
-import react from "./react.png";
-import vue from "./vue.png";
-import wordpress from "./wordpress.png";
 import calculatorapp from "./calculatorapp.png";
 import jumpgame from "./jumpgame.png";
 import softcompage from "./softcompage.png";
@@ -23,19 +14,10 @@ import decideForMe from "./decideForMe.png";
 import starwars from "./starwars.png";
 import ecommerce from "./ecommerce.png";
 import drugstoc from "./drugstoc.png";
-import covidStats from "./covidStats.png"
+import covidStats from "./covidStats.png";
 
 const images = {
   avi,
-  html,
-  css,
-  bootstrap,
-  javascript,
-  react,
-  vue,
-  nuxt,
-  netlify,
-  wordpress,
 };
 
 const projectImages = {

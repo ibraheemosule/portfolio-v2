@@ -6,7 +6,6 @@ import Skills from "./Skills";
 import Project from "./Projects";
 import WorkInterest from "./WorkInterest";
 import Container from "react-bootstrap/Container";
-import Zoom from "react-reveal/Zoom";
 
 const Home = (props) => {
   const { img, setImg, darkMode, setDarkMode } = props;
@@ -22,10 +21,8 @@ const Home = (props) => {
         <Inspiration />
         <About img={img} setImg={setImg} />
         <Skills />
-        <Zoom>
-          <Project darkMode={darkMode} />
-          <WorkInterest />
-        </Zoom>
+        <Project darkMode={darkMode} />
+        <WorkInterest />
       </Container>
     </>
   );

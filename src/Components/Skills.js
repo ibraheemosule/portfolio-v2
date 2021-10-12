@@ -1,52 +1,47 @@
 import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import { images } from "../Images/image";
-import Zoom from "react-reveal/Zoom";
 
 const Skills = () => {
-  const img = Object.values(images),
-    index = Object.keys(images);
+  const skills = [
+    "html",
+    "css",
+    "bootstrap",
+    "tailwind",
+    "javascript",
+    "typescript",
+    "react",
+    "vue",
+    "nuxt",
+    "wordpress",
+  ];
   return (
     <div className="skills">
       <h3>
         <sup>____</sup> My Skills
       </h3>
       <Container>
-        <Zoom>
-          <Row className="flex">
-            {img.slice(1, 4).map((image, i) => (
-              <Col keys={i}>
-                <img src={image} alt="html" />
-                <h4 style={{ fontWeight: 900 }}>
-                  {index.slice(1, img.length)[i]}
-                </h4>
-              </Col>
-            ))}
-          </Row>
-
-          <Row className="flex">
-            {img.slice(4, 7).map((image, i) => (
-              <Col keys={i}>
-                <img src={image} alt="html" />
-                <h4 style={{ fontWeight: 900 }}>
-                  {index.slice(4, img.length)[i]}
-                </h4>
-              </Col>
-            ))}
-          </Row>
-          <Row className="flex">
-            {img.slice(7, img.length).map((image, i) => (
-              <Col keys={i}>
-                <img src={image} alt="html" />
-                <h4 style={{ fontWeight: 900 }}>
-                  {index.slice(7, img.length)[i]}
-                </h4>
-              </Col>
-            ))}
-          </Row>
-        </Zoom>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+            marginTop: "60px",
+          }}
+        >
+          {skills.map((value, i) => (
+            <div
+              keys={i}
+              style={{
+                backgroundColor: "#0000ff44",
+                borderRadius: "5px",
+                padding: "5px 10px",
+                margin: "10px",
+              }}
+            >
+              <span style={{ fontWeight: 600 }}>{value}</span>
+            </div>
+          ))}
+        </div>
       </Container>
     </div>
   );

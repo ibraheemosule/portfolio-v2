@@ -19,8 +19,7 @@ const About = (props) => {
         <Col sm={8}>
           <p>
             I'm Ibrahim Sule, a Software Engineer (frontend), a WordPress
-            Developer and a Cloud Engineering enthusiast. I specialize in
-            websites, web applications, e-commerce, frontend development etc.
+            Developer and a Cloud Engineering enthusiast.
           </p>
         </Col>
       </Row>
