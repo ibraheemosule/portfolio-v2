@@ -30,7 +30,7 @@ const Skills = () => {
         >
           {skills.map((value, i) => (
             <div
-              keys={i}
+              key={i}
               style={{
                 backgroundColor: "#0000ff44",
                 borderRadius: "5px",

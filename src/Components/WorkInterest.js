@@ -1,4 +1,3 @@
-import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import SocialIcons from "./projectTemplate/SocialIcons";
@@ -7,7 +6,6 @@ import { Twitter } from "react-bootstrap-icons";
 import { Envelope } from "react-bootstrap-icons";
 import { Github } from "react-bootstrap-icons";
 import { Whatsapp } from "react-bootstrap-icons";
-import { ArrowDown } from "react-bootstrap-icons";
 import { Linkedin } from "react-bootstrap-icons";
 
 const WorkInterest = () => (
@@ -28,7 +26,7 @@ const WorkInterest = () => (
     <Row style={{ marginTop: "10vh" }}>
       <Col sm={8}>
         <h3>
-          <sup>____</sup> Contact Me Below <ArrowDown size={12} />
+          <sup>____</sup> Contact
         </h3>
       </Col>
     </Row>

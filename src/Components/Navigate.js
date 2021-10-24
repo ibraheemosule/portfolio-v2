@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/styles.scss";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -33,8 +32,8 @@ const Navigate = (props) => {
       </Collapse>
       <div className="logo-button">
         <button onClick={Toggler}>
-          <span className="light">D</span>
-          <span className="dark">L</span>
+          <span className="light">Dark</span>
+          <span className="dark">Light</span>
         </button>
         <Brand>
           <img

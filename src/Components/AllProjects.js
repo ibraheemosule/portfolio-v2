@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectTemplate from "./projectTemplate/projectTemplate";
 import Container from "react-bootstrap/Container";
 import CardDeck from "react-bootstrap/CardDeck";
