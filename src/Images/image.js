@@ -15,6 +15,7 @@ import starwars from "./starwars.png";
 import ecommerce from "./ecommerce.png";
 import drugstoc from "./drugstoc.png";
 import covidStats from "./covidStats.png";
+import bejamas from "./bejamas.png"
 
 const images = {
   avi,
@@ -37,6 +38,7 @@ const projectImages = {
   ecommerce,
   starwars,
   drugstoc,
+  bejamas
 };
 
 export { images, projectImages };
