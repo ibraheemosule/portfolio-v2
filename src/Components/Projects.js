@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { projectImages } from "../Images/image";
 
 const Project = (props) => {
-  const { jsonplaceholderposts, starwars, bejamas } = projectImages;
+  const { ecommerce, starwars, bejamas } = projectImages;
   return (
     <Container fluid>
       <Row id="projects">
@@ -17,12 +17,21 @@ const Project = (props) => {
           <sup>____</sup> My Projects
         </h3>
         <CardDeck>
+        <ProjectTemplate
+            image={bejamas}
+            link={"https://ios-bejamas.netlify.app"}
+            title={"A Products Landing Page"}
+            text={`An products landing page created with react and pictures gotten from pexels. products can be sorted and filtered`}
+            tools={"html, scss, react"}
+            darkMode={props.darkMode}
+          />
+
           <ProjectTemplate
-            image={jsonplaceholderposts}
-            link={"https://jsonplaceholderposts.netlify.app"}
-            title={"Blog Posts"}
-            text={`Created a a blog post with Vue.js using the fetched data from jsonplaceholder website`}
-            tools={"Html, css, Javascript, Vue, Bootstrap"}
+            image={ecommerce}
+            link={"https://ios-ecommerce.netlify.app"}
+            title={"An Ecommerce Web App"}
+            text={`An ecommerce web app created using vue, tailwind and pictures gotten from pexels api, and firebase user authentication added to it.`}
+            tools={"html, css, vue, tailwind"}
             darkMode={props.darkMode}
           />
           <ProjectTemplate
@@ -33,14 +42,7 @@ const Project = (props) => {
             tools={"Html, css, Javascript, vue, starwars api, vuex"}
             darkMode={props.darkMode}
           />
-          <ProjectTemplate
-            image={bejamas}
-            link={"https://ios-bejamas.netlify.app"}
-            title={"A Products Landing Page"}
-            text={`An products landing page created with react and pictures gotten from pexels. products can be sorted and filtered`}
-            tools={"html, css, vue, tailwind"}
-            darkMode={props.darkMode}
-          />
+
         </CardDeck>
       </Row>
       <Row>

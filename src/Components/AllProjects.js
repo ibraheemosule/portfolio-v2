@@ -10,7 +10,6 @@ const AllProjects = (props) => {
     jumpgame,
     softcompage,
     todolist,
-    ecommerce,
     decideForMe,
     covidStats,
     ddlabs,
@@ -18,6 +17,7 @@ const AllProjects = (props) => {
     cyhermes,
     receiptGenerator,
     drugstoc,
+    jsonplaceholderposts
   } = projectImages;
 
   const { darkMode } = props;
@@ -28,12 +28,13 @@ const AllProjects = (props) => {
       </div>
       <Container style={{ marginTop: "7vh" }}>
         <CardDeck style={{ marginBottom: "7vh" }}>
+
           <ProjectTemplate
-            image={ecommerce}
-            link={"https://ios-ecommerce.netlify.app"}
-            title={"An Ecommerce Web App"}
-            text={`An ecommerce web app created using vue, tailwind and pictures gotten from pexels api, and firebase user authentication added to it.`}
-            tools={"html, css, vue, tailwind"}
+            image={jsonplaceholderposts}
+            link={"https://jsonplaceholderposts.netlify.app"}
+            title={"Blog Posts"}
+            text={`Created a a blog post with Vue.js using the fetched data from jsonplaceholder website`}
+            tools={"Html, css, Javascript, Vue, Bootstrap"}
             darkMode={props.darkMode}
           />
 
