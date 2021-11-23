@@ -8,7 +8,7 @@ import { ArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import { projectImages } from "../Images/image";
 
-const Project = (props) => {
+const Project = props => {
   const { ecommerce, starwars, bejamas } = projectImages;
   return (
     <Container fluid>
@@ -17,11 +17,11 @@ const Project = (props) => {
           <sup>____</sup> My Projects
         </h3>
         <CardDeck>
-        <ProjectTemplate
+          <ProjectTemplate
             image={bejamas}
             link={"https://ios-bejamas.netlify.app"}
             title={"A Products Landing Page"}
-            text={`An products landing page created with react and pictures gotten from pexels. products can be sorted and filtered`}
+            text={`A products landing page created with react and pictures gotten from pexels. products can be sorted and filtered`}
             tools={"html, scss, react"}
             darkMode={props.darkMode}
           />
@@ -42,7 +42,6 @@ const Project = (props) => {
             tools={"Html, css, Javascript, vue, starwars api, vuex"}
             darkMode={props.darkMode}
           />
-
         </CardDeck>
       </Row>
       <Row>

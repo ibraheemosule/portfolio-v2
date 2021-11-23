@@ -4,7 +4,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 import { Link } from "react-router-dom";
 import { projectImages } from "../Images/image";
 
-const AllProjects = (props) => {
+const AllProjects = props => {
   const {
     calculatorapp,
     jumpgame,
@@ -17,7 +17,13 @@ const AllProjects = (props) => {
     cyhermes,
     receiptGenerator,
     drugstoc,
-    jsonplaceholderposts
+    jsonplaceholderposts,
+    bejamas,
+    starwars,
+    ecommerce,
+    beatchain,
+    githubtrends,
+    bincom,
   } = projectImages;
 
   const { darkMode } = props;
@@ -28,7 +34,60 @@ const AllProjects = (props) => {
       </div>
       <Container style={{ marginTop: "7vh" }}>
         <CardDeck style={{ marginBottom: "7vh" }}>
+          <ProjectTemplate
+            image={githubtrends}
+            link={"https://ios-githubtrends.netlify.app"}
+            title={"A Replica of github trending page"}
+            text={`A replica of github trends page built using typescript react and tailwind`}
+            tools={"typescript, react, tailwind"}
+            darkMode={props.darkMode}
+          />
 
+          <ProjectTemplate
+            image={beatchain}
+            link={"https://beatchain.netlify.app"}
+            title={"A simple landing lage"}
+            text={`A simple landing page that has a video which can be played by either clicking play or hovering on it.`}
+            tools={"html, react, scss, javascript"}
+            darkMode={props.darkMode}
+          />
+          <ProjectTemplate
+            image={covidStats}
+            link={"https://ios-firstTemplate.netlify.app/"}
+            title={"Nigeria Covid Data"}
+            text={`A web app for keeping track of covid stats in Nigeria`}
+            tools={"html, css, vue, tailwind "}
+            darkMode={darkMode}
+          />
+        </CardDeck>
+        <CardDeck style={{ marginBottom: "7vh" }}>
+          <ProjectTemplate
+            image={bejamas}
+            link={"https://ios-bejamas.netlify.app"}
+            title={"A Products Landing Page"}
+            text={`A products landing page created with react and pictures gotten from pexels. products can be sorted and filtered`}
+            tools={"html, scss, react"}
+            darkMode={props.darkMode}
+          />
+
+          <ProjectTemplate
+            image={ecommerce}
+            link={"https://ios-ecommerce.netlify.app"}
+            title={"An Ecommerce Web App"}
+            text={`An ecommerce web app created using vue, tailwind and pictures gotten from pexels api, and firebase user authentication added to it.`}
+            tools={"html, css, vue, tailwind"}
+            darkMode={props.darkMode}
+          />
+          <ProjectTemplate
+            image={starwars}
+            link={"https://ios-starwars.netlify.app"}
+            title={"Starwars Movie"}
+            text={`A web application created using starwars api that shows the characters, planets and starships`}
+            tools={"Html, css, Javascript, vue, starwars api, vuex"}
+            darkMode={props.darkMode}
+          />
+        </CardDeck>
+        <CardDeck style={{ marginBottom: "7vh" }}>
           <ProjectTemplate
             image={jsonplaceholderposts}
             link={"https://jsonplaceholderposts.netlify.app"}
@@ -58,11 +117,11 @@ const AllProjects = (props) => {
         </CardDeck>
         <CardDeck style={{ marginBottom: "7vh" }}>
           <ProjectTemplate
-            image={covidStats}
-            link={"https://ios-covidstats.netlify.app/"}
-            title={"Nigeria Covid Data"}
-            text={`A web app for keeping track of covid stats in Nigeria`}
-            tools={"html, css, vue, tailwind "}
+            image={bincom}
+            link={"https://ios-nyscpage.netlify.app/"}
+            title={"nysc story"}
+            text={`One of the first pages i built while learning DOM manipulation in javascript`}
+            tools={"html, css, javascript"}
             darkMode={darkMode}
           />
           <ProjectTemplate
@@ -135,6 +194,7 @@ const AllProjects = (props) => {
             darkMode={darkMode}
           />
         </CardDeck>
+
         <div style={{ textAlign: "center", marginTop: "7vh" }}>
           <Link to="/">Return Home</Link>
         </div>

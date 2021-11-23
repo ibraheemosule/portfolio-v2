@@ -15,7 +15,10 @@ import starwars from "./starwars.png";
 import ecommerce from "./ecommerce.png";
 import drugstoc from "./drugstoc.png";
 import covidStats from "./covidStats.png";
-import bejamas from "./bejamas.png"
+import bejamas from "./bejamas.png";
+import beatchain from "./beatchain.png";
+import githubtrends from "./gihubtrend.png";
+import bincom from "./bincom.png";
 
 const images = {
   avi,
@@ -38,7 +41,10 @@ const projectImages = {
   ecommerce,
   starwars,
   drugstoc,
-  bejamas
+  bejamas,
+  githubtrends,
+  beatchain,
+  bincom,
 };
 
 export { images, projectImages };
