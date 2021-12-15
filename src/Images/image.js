@@ -19,6 +19,7 @@ import bejamas from "./bejamas.png";
 import beatchain from "./beatchain.png";
 import githubtrends from "./gihubtrend.png";
 import bincom from "./bincom.png";
+import weatherapp from "./weatherapp.png";
 
 const images = {
   avi,
@@ -45,6 +46,7 @@ const projectImages = {
   githubtrends,
   beatchain,
   bincom,
+  weatherapp,
 };
 
 export { images, projectImages };

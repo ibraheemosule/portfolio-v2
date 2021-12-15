@@ -23,7 +23,7 @@ const AllProjects = props => {
     ecommerce,
     beatchain,
     githubtrends,
-    bincom,
+    weatherapp,
   } = projectImages;
 
   const { darkMode } = props;
@@ -75,7 +75,7 @@ const AllProjects = props => {
             link={"https://ios-ecommerce.netlify.app"}
             title={"An Ecommerce Web App"}
             text={`An ecommerce web app created using vue, tailwind and pictures gotten from pexels api, and firebase user authentication added to it.`}
-            tools={"html, css, vue, tailwind"}
+            tools={"html, css, vue, composition api, tailwind"}
             darkMode={props.darkMode}
           />
           <ProjectTemplate
@@ -117,11 +117,11 @@ const AllProjects = props => {
         </CardDeck>
         <CardDeck style={{ marginBottom: "7vh" }}>
           <ProjectTemplate
-            image={bincom}
-            link={"https://ios-nyscpage.netlify.app/"}
-            title={"nysc story"}
-            text={`One of the first pages i built while learning DOM manipulation in javascript`}
-            tools={"html, css, javascript"}
+            image={weatherapp}
+            link={"https://ios-weatherapp.netlify.app/"}
+            title={"Weather App"}
+            text={`A weather app that shows the next 5 days weather forecast of a city`}
+            tools={"vue, typescript, composition api"}
             darkMode={darkMode}
           />
           <ProjectTemplate

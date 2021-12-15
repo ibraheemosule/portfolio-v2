@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { projectImages } from "../Images/image";
 
 const Project = props => {
-  const { ecommerce, starwars, bejamas } = projectImages;
+  const { ecommerce, weatherapp, bejamas } = projectImages;
   return (
     <Container fluid>
       <Row id="projects">
@@ -35,11 +35,11 @@ const Project = props => {
             darkMode={props.darkMode}
           />
           <ProjectTemplate
-            image={starwars}
-            link={"https://ios-starwars.netlify.app"}
-            title={"Starwars Movie"}
-            text={`A web application created using starwars api that shows the characters, planets and starships`}
-            tools={"Html, css, Javascript, vue, starwars api, vuex"}
+            image={weatherapp}
+            link={"https://ios-weatherapp.netlify.app/"}
+            title={"Weather App"}
+            text={`A weather app that shows the next 5 days weather forecast of a city`}
+            tools={"vue, typescript, composition api"}
             darkMode={props.darkMode}
           />
         </CardDeck>
