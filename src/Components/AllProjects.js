@@ -36,7 +36,7 @@ const AllProjects = props => {
         <CardDeck style={{ marginBottom: "7vh" }}>
           <ProjectTemplate
             image={githubtrends}
-            link={"https://ios-githubtrends.netlify.app"}
+            link={"https://ios-githubtrends.vercel.app"}
             title={"A Replica of github trending page"}
             text={`A replica of github trends page built using typescript react and tailwind`}
             tools={"typescript, react, tailwind"}
