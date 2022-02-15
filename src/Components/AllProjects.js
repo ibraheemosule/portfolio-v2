@@ -120,6 +120,22 @@ const AllProjects = props => {
             tools={"html, css, react, scss"}
             darkMode={darkMode}
           />
+          {/* <ProjectTemplate
+            image={_.revealbot}
+            link={"https://ios-revealbot.netlify.app/"}
+            title={"Frontend mentors task"}
+            text={`Created a replica of the revealbot homepage on frontend mentors`}
+            tools={"Html, css"}
+            darkMode={darkMode}
+          />
+          <ProjectTemplate
+            image={_.cyhermes}
+            link={"https://cyhermestask.netlify.app/"}
+            title={"Cyhermes Task"}
+            text={`Given a frontend task to replicate a landing page design using vue`}
+            tools={"html, css, bootstrap, vue"}
+            darkMode={darkMode}
+          /> */}
         </CardDeck>
         <CardDeck style={{ marginBottom: "7vh" }}>
           <ProjectTemplate
