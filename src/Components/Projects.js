@@ -6,10 +6,9 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Button from "react-bootstrap/Button";
 import { ArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
-import { projectImages } from "../Images/image";
+import * as _ from "../Images/image";
 
 const Project = props => {
-  const { ecommerce, weatherapp, bejamas } = projectImages;
   return (
     <Container fluid>
       <Row id="projects">
@@ -18,7 +17,7 @@ const Project = props => {
         </h3>
         <CardDeck>
           <ProjectTemplate
-            image={bejamas}
+            image={_.bejamas}
             link={"https://ios-bejamas.netlify.app"}
             title={"A Products Landing Page"}
             text={`A products landing page created with react and pictures gotten from pexels. products can be sorted and filtered`}
@@ -27,15 +26,17 @@ const Project = props => {
           />
 
           <ProjectTemplate
-            image={ecommerce}
-            link={"https://ios-ecommerce.netlify.app"}
-            title={"An Ecommerce Web App"}
-            text={`An ecommerce web app created using vue, tailwind and pictures gotten from pexels api, and firebase user authentication added to it.`}
-            tools={"html, css, vue, tailwind"}
+            image={_.formpl}
+            link={"https://formpl.vercel.app"}
+            title={"Formpl"}
+            text={`Created a templates layout with over 25k array list fetched from the backend, templates can be filtered and sorted`}
+            tools={
+              "React, typescript, javascript, redux toolkit with typescript"
+            }
             darkMode={props.darkMode}
           />
           <ProjectTemplate
-            image={weatherapp}
+            image={_.weatherapp}
             link={"https://ios-weatherapp.netlify.app/"}
             title={"Weather App"}
             text={`A weather app that shows the next 5 days weather forecast of a city`}

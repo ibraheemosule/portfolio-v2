@@ -20,12 +20,14 @@ import beatchain from "./beatchain.png";
 import githubtrends from "./gihubtrend.png";
 import bincom from "./bincom.png";
 import weatherapp from "./weatherapp.png";
+import formpl from "./formpl.png";
+import dashboard from "./dashboard.png";
 
-const images = {
+export const images = {
   avi,
 };
 
-const projectImages = {
+export {
   calculatorapp,
   jumpgame,
   softcompage,
@@ -47,6 +49,6 @@ const projectImages = {
   beatchain,
   bincom,
   weatherapp,
+  formpl,
+  dashboard,
 };
-
-export { images, projectImages };
