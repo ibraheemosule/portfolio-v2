@@ -105,11 +105,11 @@ const AllProjects = props => {
             darkMode={darkMode}
           />
           <ProjectTemplate
-            image={_.ddlabs}
-            link={"https://ddlabs.netlify.app"}
-            title={"Ddlabs Task"}
-            text={`Given a frontend task to replicate a landing page design using react`}
-            tools={"Html, css, bootstrap, Javascript, react"}
+            image={_.dashboard}
+            link={"https://ios-proexe.vercel.app"}
+            title={"Proexe dashboard"}
+            text={`Created a dashboard with react and redux. users can be added, removed and have their details editted.`}
+            tools={"react, javascript, redux"}
             darkMode={darkMode}
           />
           <ProjectTemplate
@@ -147,11 +147,11 @@ const AllProjects = props => {
             darkMode={props.darkMode}
           />
           <ProjectTemplate
-            image={_.dashboard}
-            link={"https://proexe.vercel.app"}
-            title={"Proexe dashboard"}
-            text={`Created a dashboard with react and redux. users can be added, removed and have their details editted.`}
-            tools={"react, javascript, redux"}
+            image={_.ddlabs}
+            link={"https://ddlabs.netlify.app"}
+            title={"Ddlabs Task"}
+            text={`Given a frontend task to replicate a landing page design using react`}
+            tools={"Html, css, bootstrap, Javascript, react"}
             darkMode={darkMode}
           />
           <ProjectTemplate
